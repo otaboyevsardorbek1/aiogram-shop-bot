@@ -29,7 +29,7 @@ async def call_admin(callback: CallbackQuery):
         f"Пользователь {callback.from_user.username} ({callback.from_user.id}) "
         "- вернулся в админ панель"
     )
-    await callback.answer('')
+    await callback.answer('{}')
     await callback.message.answer(
         'Вы вернулись в админ панель',
         reply_markup=admin_panel
